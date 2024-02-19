@@ -9,7 +9,7 @@
 :root {
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: 'Passion One', cursive;
-    --font3: "Cedarville Cursive", cursive;
+    --font3:  cursive;
 }
 
 *{
@@ -60,11 +60,28 @@ section{
     font-family: var(--font3);
     font-size: 3.5vh;
 }
+
+section > p{
+    padding-bottom: 2em;
+}
+
 .imagem > p{
     display: inline-block;
     padding: 5px;
-    background-color: rgb(19, 17, 17);
+    background-color: rgba(19, 17, 17, 0.567);
+    text-shadow: 1px 1px 0px black;
 
+}
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right, center;
+    
+}
+
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    
 }
 
 .normal{
@@ -76,6 +93,9 @@ section{
 .imagem{
     background-color: rgb(12, 11, 11);
     color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
+    background-attachment: fixed;
    
 }
 
