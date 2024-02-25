@@ -19,6 +19,13 @@
             text-align: center;
         }
 
+        caption{
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
             background-color: rgba(50, 54, 54, 0.541);
             color: white;
@@ -32,10 +39,11 @@
     <h1>Uso de Tabelas Grandes</h1>
 
     <table>
+        <caption>População Dos Estados</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th style="width: 50px;">População</th>
                
             </tr>
         </thead>
@@ -62,7 +70,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong >110.659.804</strong></td>
             </tr>
         </tfoot>
