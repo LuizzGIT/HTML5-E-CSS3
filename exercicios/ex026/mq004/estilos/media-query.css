@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/*Todas as demais midias*/
+
+/*Typical Device BreakPoints
+Pequenas Telas: até 600px
+Celular : de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: acima de 1200px
+
+*/
+
+
+@media print {
+    body{
+        font-family: 'Courier New', Courier, monospace;
+      
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90%;
+    }
+
+    main::after{
+        content: 'Impressão por Luiz Henrique';
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    #phone{
+        display: none;
+    }
+
+    #tablet{
+        display: none;
+    }
+
+    #print{
+        display: block;
+    }
+
+    #desktop{
+        display: none;
+    }
+
+    #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px ) and (max-width: 992px) {
+   body{ 
+    background-image: url(../imagens/back-tablet.jpg);
+   }
+
+    #phone{
+        display: none;
+    }
+
+    #tablet{
+        display: block;
+    }
+
+    #print{
+        display: none;
+    }
+
+    #desktop{
+        display: none;
+    }
+
+    #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{ 
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    #phone{
+        display: none;
+    }
+    
+    #tablet{
+        display: none;
+    }
+    
+    #print{
+        display: none;
+    }
+    
+    #desktop{
+        display:block;
+    }
+    
+    #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{ 
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+    
+    #phone{
+        display: none;
+    }
+    
+    #tablet{
+        display:none;
+    }
+    
+    #print{
+        display: none;
+    }
+    
+    #desktop{
+        display: none;
+    }
+    
+    #tv{
+        display: block;
+    }
+    
+}
